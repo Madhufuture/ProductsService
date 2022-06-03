@@ -3,9 +3,13 @@ version: '3.4'
 services:
   productsservice:
     image: madhuraju/product-service:mytag
+    ports:
+      - 3000:80
 
   ordersservice:
     image: madhuraju/order-service:mytag
+    ports:
+      - 3010:80
     
     #build:
     #  context: .
